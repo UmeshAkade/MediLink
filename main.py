@@ -102,5 +102,9 @@ def developer():
 def blog():
     return render_template("blog.html")
 
+@app.route('/Home')
+def Home():
+    return render_template("index.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
